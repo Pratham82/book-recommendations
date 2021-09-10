@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+  color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom Styles */
+
+.booksContainer {
+  /* max-width: 700px; */
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  padding: 10px 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+body {
+  background-color: #22252b;
+}
+
+.booksHeading {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  /* overflow: scroll; */
+  flex-wrap: wrap;
+}
+
+.booksHeading::-webkit-scrollbar {
+  display: none;
+}
+
+.activeGenere {
+  /* background-color: rgb(122, 117, 117); */
+  background-color: #484f5c;
+}
+
+.bookList {
+  margin-top: 10px;
+}
+
+.bookComponent {
+  display: flex;
+  background-color: #484f5c;
+  padding: 15px;
+  margin: 15px 10px;
+  border-radius: 10px;
+}
+
+.bookCover {
+  height: 180px;
+  width: 120px;
+  border-radius: 10px;
+}
+
+.bookContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.bookTitle {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.bookAuthor {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.bookRating {
+}
